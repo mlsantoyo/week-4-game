@@ -1,0 +1,20 @@
+Obj: to create a game where user clicks on 4 buttons to generate a total score that doesn't exceed
+randomly generated target number
+
+Heading
+
+Instructions for play
+
+Display randoomly generated target number, 19-120
+
+Display wins and losses
+
+Display 4 buttons (crystals)
+	each on click event on each button will produce randomly generated integer, 1-12
+	
+
+Display total score 
+	each integer added into total score until => target number
+	if total score = target number, "you win!" and +1 to wins
+	if total score < target number, user continues to play
+	if total score > target number, "you lose" and +1 to losses
