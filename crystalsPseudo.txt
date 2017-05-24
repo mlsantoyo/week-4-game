@@ -3,18 +3,27 @@ randomly generated target number
 
 Heading
 
-Instructions for play
+Display Instructions for play
 
-Display randoomly generated target number, 19-120
+Generate random target number, 19-120
+Show this number in the target area
 
-Display wins and losses
+
+	
 
 Display 4 buttons (crystals)
 	each on click event on each button will produce randomly generated integer, 1-12
-	
+	need 4 empty var to store the value of the random integer
+	integer will change when a new game starts
 
 Display total score 
 	each integer added into total score until => target number
+	
+	check status of current round
+
 	if total score = target number, "you win!" and +1 to wins
 	if total score < target number, user continues to play
 	if total score > target number, "you lose" and +1 to losses
+
+
+Display wins and losses
