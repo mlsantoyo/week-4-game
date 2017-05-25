@@ -45,14 +45,14 @@ function newRound(){
 function youWin(){
 alert("You're a winner!");
   wins++; 
-  $('#numberWins').html("Wins: " + wins);
+  $('#numberWins').html(wins);
  
 }
 //addes the losses to the userTotal
 function youLose(){
 alert ("Sorry :( You lost!");
   losses++;
-  $('#numberLosses').html("Losses: " + losses);
+  $('#numberLosses').html(losses);
   
 }
 
