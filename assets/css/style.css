@@ -1,41 +1,16 @@
-body {
-	background-image: url(../images/mine.jpg);
-
-}
-
-header {
-	font-size: 32px;
-	color: white;
-	padding: 30px;
-}
-
-.container {
-
-	width: 35%;
-	color: white;
-	padding: 30px;
-}
-
-.blackBox {
-	float: left;
-	width: 150px;
-	height: 150px;
+body{
 	background-color: black;
 	color: white;
-	margin: 10px;
 }
 
-.crystals {
-	
-	padding: 0;
-	margin: 0 auto;
-	border-color: black;
-
+.page-header {
+	margin: 0;
+	padding: 10px;
 }
 
+#directions{
+	padding: 35px;
+	margin: 0;
+	line-height: 40px;
+}
 
-
-
-
-
-	

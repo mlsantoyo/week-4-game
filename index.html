@@ -3,19 +3,88 @@
 <head>
 	<title>Crystals Collector</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
 </head>
 
 <body>
+	<div class="page-header">
+		<h1>Crystal Collector<mall></small></h1>
+	</div>
 
-	<header>
+	<div class="row">
+		<div class="col-md-6" id="directions">
+				<p>You will be given a random number at the start of the game</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your score.</p>
+				<p>You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the value of each crystal.</p>
+				</div>
 
-		<h1>Crystals Collector!</h1> 
+		<div class="col-md-6" id="mine"><img src="assets/images/mine.jpg"></div>
+	</div>
 
-	</header>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="row" >
+				<div class="col-xs-6 col-md-3" id="green">
+					<img src="assets/images/green.jpg" alt="Green Crystal">
+					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-3" id="orange">
+					
+						<img src="assets/images/orange.jpg" alt="Orange Crystal">
+					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-3" id="blue">
+					
+						<img src="assets/images/blue.jpg" alt="Blue Crystal">
+					
+				</div>
+				
+			</div>
+			<div class="row">
+				<div class="col-xs-6 col-md-3" id="red">
+					
+						<img src="assets/images/red.jpg" alt="Red Crystal">
+					
+				</div>
+				
+</div>
+
+		</div>
+		<div class="col-md-3">
+			<div class="row">
+				<div class="col-md-3" id="target"></div>
+
+				<div class="row">
+				<div class="col-md-3" id="currentRound"></div>
+
+				<div class="row">
+				<div class="col-md-3" id="numberWins"></div>
+
+				<div class="row">
+				<div class="col-md-3" id="numberLosses"></div>
+
+			</div>
+
+			
+
+		</div>
+	</div>
+
+
+	
+		<!-- 
 
 
 	<main>
@@ -74,12 +143,11 @@
 
 
 
+ -->
 
 
 
 
-
-</script>
 
 <script
 src="https://code.jquery.com/jquery-3.2.1.min.js"

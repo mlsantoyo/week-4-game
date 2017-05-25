@@ -11,12 +11,12 @@ var losses = 0;
 
 
 //display wins and losses
-$('#numberWins').html(wins);
-$('#numberLosses').html(losses);
+$('#numberWins').html("Wins: " + wins);
+$('#numberLosses').html("Losses: " + losses);
 
 
 //display in div called random
-$("#target").html(randomNumber);
+$("#target").html("Target: " + randomNumber);
 
 
 //generate random number for each crystal
@@ -32,27 +32,27 @@ var red = Math.floor(Math.random() * ((12-1)+1) + 1);
 function newRound(){
 	randomNumber = Math.floor(Math.random() * ((120-19)+1) + 19);
 	console.log(randomNumber);
-	$("#target").html(randomNumber);
+	$("#target").html("Target: " + randomNumber);
 	green= Math.floor(Math.random()*((12-1)+1) + 1);
 	orange= Math.floor(Math.random()*((12-1)+1) + 1);
 	blue= Math.floor(Math.random()*((12-1)+1) + 1);
 	red= Math.floor(Math.random()*((12-1)+1) + 1);
 	currentRound = 0;
-	$("#currentRound").html(currentRound);
+	$("#currentRound").html("Your Score: " + currentRound);
   } 
 
 //adds the wins to the userTotal
 function youWin(){
 alert("You're a winner!");
   wins++; 
-  $('#numberWins').html(wins);
+  $('#numberWins').html("Wins: " + wins);
  
 }
 //addes the losses to the userTotal
 function youLose(){
 alert ("Sorry :( You lost!");
   losses++;
-  $('#numberLosses').html(losses);
+  $('#numberLosses').html("Losses: " + losses);
   
 }
 
@@ -66,7 +66,7 @@ currentRound += green;
 
 
 console.log("currentRound", currentRound);	
-$("#currentRound").html(currentRound);
+$("#currentRound").html("Your Score: " + currentRound);
 
     //sets win/lose conditions
         if (currentRound == randomNumber){
@@ -85,7 +85,7 @@ $("#orange").on("click", function(){
 	currentRound += orange;
 
 	console.log("currentRound", currentRound);
-	$("#currentRound").html(currentRound);	
+	$("#currentRound").html("Your Score: " + currentRound);	
 
 	//sets win/lose conditions
         if (currentRound == randomNumber){
@@ -104,7 +104,7 @@ $("#blue").on("click", function(){
 	currentRound += blue;
 
 	console.log("currentRound", currentRound);
-	$("#currentRound").html(currentRound);	
+	$("#currentRound").html("Your Score: " + currentRound);	
 
 	//sets win/lose conditions
         if (currentRound == randomNumber){
@@ -123,7 +123,7 @@ $("#red").on("click", function(){
 	currentRound += red;
 
 	console.log("currentRound", currentRound);
-	$("#currentRound").html(currentRound);
+	$("#currentRound").html("Your Score: " + currentRound);
 
 	//sets win/lose conditions
         if (currentRound == randomNumber){
